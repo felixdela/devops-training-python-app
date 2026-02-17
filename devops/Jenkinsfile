@@ -1,27 +1,71 @@
-/*
-  Practica 2 - Jenkinsfile dummy (PUNTO DE PARTIDA)
-
-  Este Jenkinsfile es intencionalmente simple. En la Practica 2 iras anadiendo
-  piezas (stages, agents, funciones Groovy, Docker build, docker compose, etc.)
-  hasta construir un pipeline CI/CD completo.
-*/
+def runInDocker(String image, Closure body) {
+  docker.image(image).inside {
+    body()
+  }
+}
 
 pipeline {
-  // `agent any` = el pipeline se ejecuta en cualquier nodo/agente disponible.
   agent any
 
+  environment {
+    CI_IMAGE_NAME = "devops-training-python-app-ci:latest"
+  }
+
   stages {
-    stage('Test') {
-      agent {
-        docker {
-          image 'python:3.6-slim'
+
+    // =========================================
+    // Build CI image
+    // =========================================
+    stage('Build CI image') {
+      steps {
+        script {
+          docker.build(
+            env.CI_IMAGE_NAME,
+            "-f devops/ci.Dockerfile ."
+          )
+          echo "Imagen CI construida: ${env.CI_IMAGE_NAME}"
         }
       }
+    }
+
+    // =========================================
+    // Lint
+    // =========================================
+    stage('Lint') {
       steps {
-      	sh 'python -m pip install --upgrade pip'
-      	sh 'pip install -r requirements.txt'
-        sh 'pytest'
+        script {
+          runInDocker(env.CI_IMAGE_NAME) {
+
+            // Instalar dependencias necesarias para lint
+            sh '''
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt flake8 mypy black
+            '''
+
+            sh 'make lint'
+          }
+        }
+      }
+    }
+
+    // =========================================
+    // Test
+    // =========================================
+    stage('Test') {
+      steps {
+        script {
+          runInDocker(env.CI_IMAGE_NAME) {
+
+            sh '''
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+            '''
+
+            sh 'pytest -q'
+          }
+        }
       }
     }
   }
 }
+
