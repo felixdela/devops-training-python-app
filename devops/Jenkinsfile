@@ -14,10 +14,11 @@ pipeline {
     stage('Test') {
       agent {
         docker {
-          image 'maven:3.8.6-openjdk-11-slim'
+          image 'python:3.6-slim'
         }
       }
       steps {
+      	sh 'python -m pip install --upgrade pip'
       	sh 'pip install -r requirements.txt'
         sh 'pytest'
       }
