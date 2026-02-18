@@ -6,7 +6,8 @@ import os
 
 app = Flask(__name__)
 
-#~comment
+# comment
+
 
 def favorite_colors() -> List[Dict]:
     config = {
@@ -33,3 +34,4 @@ def index() -> str:
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+
