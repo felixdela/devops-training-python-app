@@ -1,0 +1,105 @@
+[33mcommit 09427fb735d589b2d3b8bf9985090700a76c7a40[m[33m ([m[1;36mHEAD -> [m[1;32mfeat/practica-2[m[33m, [m[1;31morigin/feat/practica-2[m[33m)[m
+Author: Felix <fdelapazf@gmail.com>
+Date:   Tue Feb 17 18:52:24 2026 +0100
+
+    Ejercicio 3
+
+[33mcommit 1b46e94067f8a1217009f6e9999fd2c630ee1bbc[m
+Author: Felix <fdelapazf@gmail.com>
+Date:   Tue Feb 17 18:42:04 2026 +0100
+
+    Ejercicio 2 fix
+
+[33mcommit b63e3c415d24a28a04910b3901f4f2e5900aaa39[m
+Author: Felix <fdelapazf@gmail.com>
+Date:   Tue Feb 17 18:37:49 2026 +0100
+
+    Ejercicio 2
+
+[33mcommit 8268b9aa288d0c6be77deed8b83c4be20093ca40[m[33m ([m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: 96d4b54 53966c7
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 18:30:35 2026 +0100
+
+    Merge branch 'feat/base' into develop
+
+[33mcommit 53966c785cf808abf0cc587933ff97e01ddcde99[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 17:43:45 2026 +0100
+
+    remove Jenkinsfile
+
+[33mcommit 0c0f200805ada5ddc396c74d97be0db8adb0ceaf[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 17:34:13 2026 +0100
+
+    final solution
+
+[33mcommit 610ea77e29ca6d08cc6323888e649b9492fe1304[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 17:32:22 2026 +0100
+
+    final solution
+
+[33mcommit d9a9d366dd1d5a2f47dccb1a964fec8227a0a5d2[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 17:24:24 2026 +0100
+
+    final solution
+
+[33mcommit 0f652df93f8f92d582e98fbb5917072803898180[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 16:59:30 2026 +0100
+
+    final solution
+
+[33mcommit 58bb6b1576cf9643e29dc910ed5c4500d7ff2886[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 8 16:09:56 2026 +0100
+
+    training 2 solution
+
+[33mcommit 5ec57c355f1b0bb3f2d90728050318bb1081d9f0[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sat Feb 7 16:50:27 2026 +0100
+
+    adjust iac docker-compose.yml - remove prefixes to pipeline files & fix repositories link in Readme.md
+
+[33mcommit 96d4b54eced5fc9d09f6a5e6cdb0f10890086f8e[m
+Merge: 2543bd6 a8c439e
+Author: contreras-adr <126195798+contreras-adr@users.noreply.github.com>
+Date:   Sat Feb 7 16:15:41 2026 +0100
+
+    Merge pull request #3 from contreras-adr/feat/base
+    
+    Feat/base
+
+[33mcommit a8c439ef28960b6bee1c677bdaaba5d3eca473d8[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 1 23:50:28 2026 +0100
+
+    training 4 y 5
+
+[33mcommit b8fd127c0b66f6d76dbf5be453588d4d0d0cca28[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 1 23:28:36 2026 +0100
+
+    training 3 y 4
+
+[33mcommit 2543bd606dd08a3c2b8cb57280d5e5ebbf7b0408[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 1 23:01:51 2026 +0100
+
+    training 2 doc.
+
+[33mcommit 4c43b26429921a2076064840adb83044173ffa53[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 1 21:59:05 2026 +0100
+
+    Initial commit
+
+[33mcommit 53b0c3229c4bee5b727b65074ca5690f390c6a65[m
+Author: adrian.contreras <adrian.contreras@scalian.com>
+Date:   Sun Feb 1 19:07:28 2026 +0100
+
+    Initial commit
